@@ -1,7 +1,7 @@
 function obtenerValor(mensaje) {
-    let valor;
+    let valor
     while (isNaN(valor) || valor === '') {
-        valor = prompt(mensaje);
+        valor = prompt(mensaje)
         if (isNaN(valor)) {
             alert("El dato ingresado debe ser un número");
         }
@@ -27,12 +27,12 @@ let costoViaje = {
 console.log(budget);
 console.log(costoViaje);
 
-let totalCosto = Object.values(costoViaje).reduce((a, b) => a + b, 0);
-console.log(totalCosto);
+let totalCosto = Object.values(costoViaje).reduce((a, b) => a + b, 0)
+console.log(totalCosto)
 
 totalCosto = totalCosto + umbral
 
-console.log("EL total del costo es: " + totalCosto);
+console.log("EL total del costo es: " + totalCosto)
 
 while(budget < totalCosto) {
     alert("No tienes suficiente presupuesto para cubrir los gastos, debes reajustar el presupuesto")
